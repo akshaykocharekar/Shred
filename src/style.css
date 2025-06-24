@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "AntonCustom";
+  src: url("../ShredAssests/fonts/pixel_operator/PixelOperatorSC-Bold.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "AntonCustom2";
+  src: url("../ShredAssests/fonts/futura-pt/FuturaCyrillicDemi.ttf")
+    format("truetype");
+}
 * {
   padding: 0;
   margin: 0;
