@@ -5,7 +5,22 @@
 }
 
 body {
-  background: #000;
   height: 100vh;
   color: #fff;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #0f0f0f);
+  background-size: 400% 400%;
+  animation: shineFlow 10s ease infinite;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes shineFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
