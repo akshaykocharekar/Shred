@@ -8,20 +8,24 @@
   src: url("../ShredAssests/fonts/futura-pt/FuturaCyrillicDemi.ttf")
     format("truetype");
 }
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body {
   height: 100vh;
   color: #fff;
-  background: rgb(0, 0, 0); /* solid black feel */
+  background: rgb(0, 0, 0);
   background-size: 300% 300%;
   animation: slowFlow 30s ease-in-out infinite;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 0;
+  padding-right: 0;
 }
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
