@@ -7,44 +7,11 @@
 body {
   height: 100vh;
   color: #fff;
-  background: linear-gradient(135deg, #0a0a0a, #121212, #0a0a0a);
+  background: rgb(0, 0, 0); /* solid black feel */
   background-size: 300% 300%;
   animation: slowFlow 30s ease-in-out infinite;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
-@keyframes slowFlow {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: -100%;
-  width: 200%;
-  height: 100%;
-  background: linear-gradient(120deg, transparent, rgb(0, 0, 0), transparent);
-  animation: slowShine 15s ease-in-out infinite;
-  pointer-events: none;
-}
-
-@keyframes slowShine {
-  0% {
-    left: -100%;
-  }
-  50% {
-    left: 100%;
-  }
-  100% {
-    left: 100%;
-  }
+html {
+  scroll-behavior: smooth;
 }

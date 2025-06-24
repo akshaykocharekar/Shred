@@ -1,0 +1,142 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 30px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center all content */
+  gap: 20px; /* optional space between items */
+  z-index: 1000;
+  color: white;
+}
+
+/* LOGO LEFT (desktop), CENTER (mobile) */
+.navbar-logo-box {
+  position: absolute;
+  left: 30px;
+}
+.navbar-logo {
+  height: 45px;
+  object-fit: contain;
+}
+
+/* NAV LINKS CENTER */
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-item {
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #ff0000;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-item:hover::after,
+.nav-item.active::after {
+  width: 100%;
+}
+
+/* HAMBURGER RIGHT (desktop), LEFT (mobile) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1100;
+  position: absolute;
+  right: 30px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hamburger animation */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* MOBILE STYLE */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar-logo-box {
+    position: static;
+    margin: 0 auto;
+  }
+
+  .hamburger {
+    display: flex;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: auto;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .navbar-links.mobile-active {
+    display: flex;
+  }
+
+  .nav-item {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+}
