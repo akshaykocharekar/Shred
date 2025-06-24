@@ -11,11 +11,12 @@ body {
 
 /* NAVBAR */
 .navbar {
-  position: fixed;
+  position: relative;
+ 
   top: 0;
   left: 0;
   width: 100%;
-  height: 90px;
+  height: 80px;
   padding: 15px 30px;
   background-color: #000;
   display: flex;
@@ -106,6 +107,9 @@ body {
 @media (max-width: 768px) {
   .navbar {
     justify-content: center;
+    padding: 10px 20px;
+    position: relative;
+ 
   }
 
   .navbar-logo-box {
@@ -114,11 +118,11 @@ body {
   }
 
   .hamburger {
-    display: flex;
-    left: 20px;
+      display: flex;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
-    right: auto;
+    left: auto;
   }
 
   .navbar-links {
