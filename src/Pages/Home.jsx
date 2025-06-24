@@ -40,7 +40,7 @@ const Home = () => {
           alt="Funny meme"
           style={{
             position: "absolute",
-            marginBottom: "30px",
+            marginBottom: "31px",
             marginTop: "30px",
             left: "50%",
             transform: "translate(-50%, -50%)",
