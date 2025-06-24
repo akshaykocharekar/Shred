@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../../Styles/Navbar.css";
-
+import logo from "../../../ShredAssests/Logo.png";
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
   const [menuOpen, setMenuOpen] = useState(false);
@@ -40,7 +40,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo-box">
-        <img src="/ShredAssests/Logo.png" alt="Logo" className="navbar-logo" />
+        <img src={logo} alt="Logo" className="navbar-logo" />
       </div>
 
       <div className={`navbar-links ${menuOpen ? "mobile-active" : ""}`}>
