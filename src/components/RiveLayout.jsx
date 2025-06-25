@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
-import rive from "../../ShredAssests/animations/shred_head.riv";
+import shred_head from "../../ShredAssests/animations/shred_head.riv";
 
 const RiveLayout = () => {
   const STATE_MACHINE_NAME = "State Machine 1"; // ✅ Change if needed
@@ -8,7 +8,7 @@ const RiveLayout = () => {
   const Y_INPUT = "y";
 
   const { rive, RiveComponent } = useRive({
-    src: rive,
+    src: shred_head,
     stateMachines: STATE_MACHINE_NAME,
     autoplay: true,
   });
