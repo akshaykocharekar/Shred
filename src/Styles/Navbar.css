@@ -44,15 +44,15 @@ body {
   justify-content: center;
   gap: 30px;
 }
-
 .nav-item {
   font-weight: 500;
-  font-family: "AntonCustom2"
+  font-family: "AntonCustom2";
   cursor: pointer;
   position: relative;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: color 0.3s ease;
+  color: white; /* default text color */
 }
 
 .nav-item::after {
@@ -60,16 +60,31 @@ body {
   position: absolute;
   width: 0%;
   height: 2px;
-  background: #ff0000;
+  background: red;
   bottom: -4px;
   left: 0;
   transition: width 0.3s ease-in-out;
 }
 
-.nav-item:hover::after,
-.nav-item.active::after {
+/* 🔥 Hover effect: red underline + red text */
+.nav-item:hover {
+  color: red;
+}
+
+.nav-item:hover::after {
   width: 100%;
 }
+
+/* ✅ Active effect: white underline + white text */
+.nav-item.active {
+  color: rgb(255, 0, 0);
+}
+
+.nav-item.active::after {
+  width: 100%;
+  background: white;
+}
+
 
 /* HAMBURGER RIGHT (desktop), LEFT (mobile) */
 .hamburger {
