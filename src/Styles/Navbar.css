@@ -33,11 +33,10 @@ body {
   display: flex;
   flex-direction: column; /* 👈 Stack logo & text vertically */
   align-items: center;
-  gap: 4px;
 }
 
 .navbar-logo {
-  height: 55px;
+  height: 45px;
   object-fit: contain;
 }
 

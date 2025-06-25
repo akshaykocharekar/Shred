@@ -52,7 +52,7 @@ const RiveLayout = () => {
       {/* Right Paragraph */}
       <div style={styles.textSection}>
         <p>
-          Powered by Rive’s state machine, this dynamic animation reacts to your
+          Powered by Riv state machine, this dynamic animation reacts to your
           cursor movement in real-time. The future of interfaces is interactive
           — and it starts right here. Explore, hover, and watch it come alive.
         </p>
@@ -66,15 +66,12 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-
     flexWrap: "wrap",
-
     color: "#ffffff",
   },
   textSection: {
-    flex: "1",
-    minWidth: "280px",
-    maxWidth: "400px",
+    minWidth: "200px",
+    maxWidth: "250px",
     fontSize: "1.1rem",
     lineHeight: "1.7",
     textAlign: "justify",
