@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layouts/Layout";
 import CircularGallery from "../components/CircularGallery";
-import bg1 from "../../ShredAssests/bg_2.png";
+import bg1 from "../../ShredAssests/bg_2.PNG";
 import memeGif from "../../ShredAssests/animations/memes.gif"; // ✅ Correct import
 import bgv from "../../ShredAssests/animations/bg_1.webm";
 const Home = () => {
