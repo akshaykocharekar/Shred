@@ -12,6 +12,8 @@
   "dependencies": {
     "@rive-app/react-canvas": "^4.21.3",
     "@tailwindcss/vite": "^4.1.10",
+    "framer-motion": "^12.19.1",
+    "gsap": "^3.13.0",
     "ogl": "^1.0.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

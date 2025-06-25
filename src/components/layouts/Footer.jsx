@@ -13,22 +13,51 @@ const Footer = () => {
     <>
       <footer className="footer">
         <div className="socials-wrapper">
-          <p className="socials-text">SOCIALS</p>
           <div className="icons">
-            <img src={telegramIcon} alt="Telegram" />
-            <img src={twitterIcon} alt="X" />
-            <img src={chainIcon} alt="DexTools" />
-            <img src={owlIcon} alt="Dex Screener" />
+            <a
+              href="https://t.me/yourTelegram"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon-button"
+            >
+              <img src={telegramIcon} alt="Telegram" />
+            </a>
+            <a
+              href="https://twitter.com/yourTwitter"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon-button"
+            >
+              <img src={twitterIcon} alt="X (Twitter)" />
+            </a>
+            <a
+              href="https://www.dextools.io/app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon-button"
+            >
+              <img src={chainIcon} alt="DexTools" />
+            </a>
+            <a
+              href="https://dexscreener.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon-button"
+            >
+              <img src={owlIcon} alt="Dex Screener" />
+            </a>
           </div>
         </div>
+
         <div className="paw">
           <video src={pawVideo} autoPlay loop muted playsInline />
         </div>
       </footer>
+
       <Aurora
-        colorStops={["#660000", "#FF0000", "#660000"]} // Dark crimson → pure red → lava pink
-        amplitude={2.5} // Stronger wave distortion
-        blend={1.7} // Smoother fiery blending
+        colorStops={["#660000", "#FF0010", "#660000"]}
+        amplitude={0.9}
+        blend={0.7}
       />
     </>
   );

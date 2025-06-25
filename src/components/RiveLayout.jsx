@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
 import shred_head from "../../ShredAssests/animations/shred_head.riv";
+import ScrambledText from "../components/ScrambledText";
 
 const RiveLayout = () => {
-  const STATE_MACHINE_NAME = "State Machine 1"; // ✅ Change if needed
+  const STATE_MACHINE_NAME = "State Machine 1";
   const X_INPUT = "x";
   const Y_INPUT = "y";
 
@@ -16,13 +17,11 @@ const RiveLayout = () => {
   const xInput = useStateMachineInput(rive, STATE_MACHINE_NAME, X_INPUT);
   const yInput = useStateMachineInput(rive, STATE_MACHINE_NAME, Y_INPUT);
 
-  // 🖱️ Mouse-based interactivity
   useEffect(() => {
     const handleMouseMove = (e) => {
       if (xInput && yInput) {
         const normalizedX = e.clientX / window.innerWidth;
         const normalizedY = e.clientY / window.innerHeight;
-
         xInput.value = normalizedX;
         yInput.value = normalizedY;
       }
@@ -36,12 +35,17 @@ const RiveLayout = () => {
     <div style={styles.container}>
       {/* Left Paragraph */}
       <div style={styles.textSection}>
-        <p>
-          Welcome to our interactive zone where design meets motion. This left
-          section gives insight into how intelligent visuals can amplify user
-          experience and engagement. Whether you're building for fun or a brand,
-          animation can emotionally connect users.
-        </p>
+        <ScrambledText
+          className="scrambled-text-demo"
+          radius={100}
+          duration={1.2}
+          speed={0.5}
+          scrambleChars=".:"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          pariatur dignissimos porro eius quam doloremque et enim velit nobis
+          maxime.
+        </ScrambledText>
       </div>
 
       {/* Center Rive Animation */}
@@ -51,11 +55,17 @@ const RiveLayout = () => {
 
       {/* Right Paragraph */}
       <div style={styles.textSection}>
-        <p>
-          Powered by Riv state machine, this dynamic animation reacts to your
-          cursor movement in real-time. The future of interfaces is interactive
-          — and it starts right here. Explore, hover, and watch it come alive.
-        </p>
+        <ScrambledText
+          className="scrambled-text-demo"
+          radius={100}
+          duration={1.2}
+          speed={0.5}
+          scrambleChars=".:"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          pariatur dignissimos porro eius quam doloremque et enim velit nobis
+          maxime.
+        </ScrambledText>
       </div>
     </div>
   );
@@ -70,17 +80,19 @@ const styles = {
     color: "#ffffff",
   },
   textSection: {
-    minWidth: "200px",
-    maxWidth: "250px",
+    minWidth: "300px",
+    maxWidth: "350px",
     fontSize: "1.1rem",
     lineHeight: "1.7",
     textAlign: "justify",
+    margin: "10px",
   },
   riveSection: {
     flex: "1.5",
     minWidth: "400px",
     maxWidth: "600px",
-    height: "500px", // 👈 Bigger animation
+    height: "500px",
+    margin: "10px",
   },
 };
 
