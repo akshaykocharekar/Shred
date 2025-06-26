@@ -77,6 +77,14 @@
     padding: 0 0.5rem;
   }
 
+  .rive-animation {
+    width: 100%;
+    max-width: 90vw;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    margin-top: 1.5rem;
+  }
+
   .rive-canvas {
     width: 100%;
     height: auto;

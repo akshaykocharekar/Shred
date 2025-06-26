@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
 import shred_head from "../../ShredAssests/animations/shred_head.riv";
 import ScrambledText from "../components/ScrambledText";
-import GlitchText from "../components/GlitchText";
+
 import "../Styles/RiveLayout.css"; //
 import aboutgif from "../../ShredAssests/animations/about.gif";
 const RiveLayout = () => {
