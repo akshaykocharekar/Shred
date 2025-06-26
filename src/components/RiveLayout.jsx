@@ -49,6 +49,7 @@ const RiveLayout = () => {
       <div className="rive-content">
         <div className="rive-text">
           <ScrambledText
+            id="about"
             className="scrambled-text-demo"
             radius={100}
             duration={1.2}

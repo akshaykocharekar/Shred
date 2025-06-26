@@ -1,4 +1,3 @@
-/* === Rive Section Layout === */
 .rive-wrapper {
   width: 100%;
   padding: 2rem 1rem;
@@ -10,7 +9,7 @@
 .rive-about {
   display: flex;
   justify-content: center;
-  margin-bottom: -1rem;
+  margin-bottom: 1.5rem;
 }
 
 .rive-content {
@@ -20,23 +19,26 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 
+/* === Text Section === */
 .rive-text {
   flex: 1;
-  min-width: 280px;
-  max-width: 700px;
+  min-width: 300px;
+  max-width: 600px;
   font-size: 1.1rem;
   line-height: 1.8;
   text-align: justify;
   padding: 0 1rem;
 }
 
+/* === Rive Animation Section === */
 .rive-animation {
   flex: 1;
-  min-width: 260px;
-  max-width: 500px;
-  height: 500px;
+  min-width: 300px;
+  max-width: 600px;
+  aspect-ratio: 1 / 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,12 +46,12 @@
 
 .rive-canvas {
   width: 100%;
-  height: 100%;
+  height: 500px;
+  object-fit: contain;
+  image-rendering: auto;
 }
 
-/* === Responsive Media Queries === */
-
-/* Tablet */
+/* === Tablet === */
 @media (max-width: 1024px) {
   .rive-content {
     flex-direction: column;
@@ -57,19 +59,18 @@
 
   .rive-text {
     max-width: 90%;
-    padding: 0 1rem;
     font-size: 1rem;
-    margin-top: 30px;
-  }
-
-  .rive-animation {
+    padding: 0 1rem;
     margin-top: 2rem;
-    height: 400px;
   }
 }
 
-/* Mobile */
+/* === Mobile === */
 @media (max-width: 600px) {
+  .rive-wrapper {
+    padding: 1.5rem 0.5rem;
+  }
+
   .rive-text {
     font-size: 0.95rem;
     line-height: 1.6;
@@ -77,6 +78,15 @@
   }
 
   .rive-animation {
-    height: 300px;
+    width: 100%;
+    max-width: 90vw;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    margin-top: 1.5rem;
+  }
+
+  .rive-canvas {
+    width: 100%;
+    height: auto;
   }
 }
