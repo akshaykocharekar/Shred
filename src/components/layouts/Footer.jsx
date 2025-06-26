@@ -11,7 +11,7 @@ import "../../Styles/Footer.css";
 const Footer = () => {
   return (
     <>
-      <footer className="footer">
+      <footer className="footer" id="social">
         <div className="paw">
           <video src={pawVideo} autoPlay loop muted playsInline />
         </div>

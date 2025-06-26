@@ -92,11 +92,7 @@ const Home = () => {
       <ScrollVelocity
         texts={[
           <div>
-            <img
-              src="/ShredAssests/shred.svg"
-              alt="down"
-              style={{ height: "32px" }}
-            />
+            <img src={shred1} alt="down" style={{ height: "32px" }} />
             <img src={shred1} alt="down" style={{ height: "32px" }} />
             <img src={shred1} alt="down" style={{ height: "32px" }} />
           </div>,
