@@ -8,8 +8,15 @@
   user-select: none;
 }
 
-/* Optional custom class for font tweak */
+/* Optional custom style */
 .custom-class1 {
   font-size: 80px;
   letter-spacing: 6px;
+}
+
+/* === Boost glitch font-size on small screens === */
+@media (max-width: 600px) {
+  .glitch {
+    font-size: clamp(3.5rem, 12vw, 10rem); /* increased size */
+  }
 }
