@@ -7,15 +7,24 @@ import owlIcon from "../../../ShredAssests/icons/dex-screener.svg";
 import pawVideo from "../../../ShredAssests/animations/paw.webm";
 
 import "../../Styles/Footer.css";
+import GlitchText from "../GlitchText";
 
 const Footer = () => {
   return (
     <>
-      <footer className="footer" id="social">
+      <footer id="socials" className="footer">
+        <GlitchText
+          speed={2}
+          enableShadows={true}
+          enableOnHover={true}
+          className="custom-class"
+        >
+          SOCIALS
+        </GlitchText>
+
         <div className="paw">
           <video src={pawVideo} autoPlay loop muted playsInline />
         </div>
-
         <div className="socials-wrapper">
           <a
             href="https://t.me/yourTelegram"

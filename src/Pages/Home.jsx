@@ -81,7 +81,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      ;{/* 📃 Text image below Buy Now */}
+      {/* 📃 Text image below Buy Now */}
       <div style={{ display: "flex", justifyContent: "center" }}>
         <img
           src={textMainPage}
@@ -126,7 +126,7 @@ const Home = () => {
             zIndex: 3,
           }}
         />
-        <div style={{ height: "500px", position: "relative", top: "30%" }}>
+        <div style={{ height: "500px", position: "relative", top: "35%" }}>
           <CircularGallery bend={1} textColor="#ffffff" borderRadius={0.05} />
         </div>
       </div>

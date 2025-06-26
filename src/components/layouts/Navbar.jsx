@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../../Styles/Navbar.css";
-import logo from "../../../ShredAssests/shred.svg";
+import logo from "../../../ShredAssests/logo2.png";
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
   const [menuOpen, setMenuOpen] = useState(false);
@@ -41,7 +41,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-logo-box">
         <img src={logo} alt="Logo" className="navbar-logo" />
-        <span className="navbar-logo-text">DOG EVOLVED</span>{" "}
+
         {/* now will appear below */}
       </div>
 

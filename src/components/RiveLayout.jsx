@@ -34,7 +34,7 @@ const RiveLayout = () => {
 
   return (
     <section style={styles.wrapper}>
-      <div style={styles.about}>
+      <div id="about" style={styles.about}>
         <img src={about} alt="About" style={styles.aboutImg} />
       </div>
 
