@@ -12,7 +12,7 @@ import GlitchText from "../GlitchText";
 const Footer = () => {
   return (
     <>
-      <footer id="socials" className="footer">
+      <footer className="footer">
         <GlitchText
           speed={1}
           enableShadows={true}
@@ -60,7 +60,7 @@ const Footer = () => {
           </a>
         </div>
       </footer>
-
+      <div id="socials"></div>
       <Aurora
         colorStops={["#660000", "#FF0010", "#660000"]}
         amplitude={0.9}
