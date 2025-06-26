@@ -126,7 +126,7 @@ const Home = () => {
             zIndex: 3,
           }}
         />
-        <div style={{ height: "500px", position: "relative", top: "35%" }}>
+        <div style={{ height: "500px", position: "relative", top: "28%" }}>
           <CircularGallery bend={1} textColor="#ffffff" borderRadius={0.05} />
         </div>
       </div>
