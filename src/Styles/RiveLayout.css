@@ -1,0 +1,82 @@
+/* === Rive Section Layout === */
+.rive-wrapper {
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: #000;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.rive-about {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -1rem;
+}
+
+.rive-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rive-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 700px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+  padding: 0 1rem;
+}
+
+.rive-animation {
+  flex: 1;
+  min-width: 260px;
+  max-width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rive-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+/* === Responsive Media Queries === */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .rive-content {
+    flex-direction: column;
+  }
+
+  .rive-text {
+    max-width: 90%;
+    padding: 0 1rem;
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+
+  .rive-animation {
+    margin-top: 2rem;
+    height: 400px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .rive-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding: 0 0.5rem;
+  }
+
+  .rive-animation {
+    height: 300px;
+  }
+}

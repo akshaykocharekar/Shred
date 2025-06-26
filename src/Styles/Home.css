@@ -1,0 +1,55 @@
+/* Responsive fixes for #memes section */
+#memes {
+  width: 100%;
+}
+
+#memes img {
+  width: 350px;
+}
+
+/* Tablet and smaller screens */
+@media (max-width: 1024px) {
+  #memes {
+    height: 400px;
+  }
+
+  #memes img {
+    width: 280px;
+    top: 28%;
+  }
+
+  #memes > div {
+    top: 32%;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  #memes {
+    height: 350px;
+  }
+
+  #memes img {
+    width: 200px;
+    top: 30%;
+  }
+
+  #memes > div {
+    top: 35%;
+  }
+}
+/* Default desktop values are already inline */
+
+@media (max-width: 1024px) {
+  img[alt="Main Text"] {
+    width: 400px;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  img[alt="Main Text"] {
+    width: 300px;
+    height: auto;
+  }
+}

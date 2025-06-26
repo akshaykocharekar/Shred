@@ -10,6 +10,7 @@ import textMainPage from "../../ShredAssests/animations/text_main_page.webp";
 import RiveLayout from "../components/RiveLayout";
 import ScrollVelocity from "../components/ScrollVelocity";
 import shred1 from "../../ShredAssests/shred.svg";
+import "../Styles/Home.css";
 const Home = () => {
   const velocity = 90.5;
   return (
@@ -89,6 +90,7 @@ const Home = () => {
           style={{ width: "550px", height: "160px" }}
         />
       </div>
+
       <ScrollVelocity
         texts={[
           <div>

@@ -1,24 +1,49 @@
+/* Load custom fonts */
 @font-face {
   font-family: "AntonCustom";
   src: url("../ShredAssests/fonts/pixel_operator/PixelOperatorSC-Bold.ttf")
     format("truetype");
 }
+
 @font-face {
   font-family: "AntonCustom2";
   src: url("../ShredAssests/fonts/futura-pt/FuturaCyrillicDemi.ttf")
     format("truetype");
 }
-body {
-  height: 100vh;
-  color: #fff;
-  background: rgb(0, 0, 0);
-  background-size: 300% 300%;
-  animation: slowFlow 30s ease-in-out infinite;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding-left: 0;
-  padding-right: 0;
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html {
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* ✅ Fixes the horizontal scroll issue */
   scroll-behavior: smooth;
+  background: #000;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Optional: if you want to allow full viewport height per section */
+body {
+  background-size: 300% 300%;
+  animation: slowFlow 30s ease-in-out infinite;
+}
+
+/* Optional animation (kept from your original) */
+@keyframes slowFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
