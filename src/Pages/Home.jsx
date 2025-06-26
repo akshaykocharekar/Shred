@@ -8,8 +8,10 @@ import shredmain from "../../ShredAssests/shredglasses.webm";
 import buyNowBtn from "../../ShredAssests/buy now button.png";
 import textMainPage from "../../ShredAssests/animations/text_main_page.webp";
 import RiveLayout from "../components/RiveLayout";
-import about from "../../ShredAssests/animations/about.gif";
+import ScrollVelocity from "../components/ScrollVelocity";
+
 const Home = () => {
+  const velocity = 90.5;
   return (
     <Layout>
       {/* 🔳 Hero Section */}
@@ -79,8 +81,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      {/* 📃 Text image below Buy Now */}
+      ;{/* 📃 Text image below Buy Now */}
       <div style={{ display: "flex", justifyContent: "center" }}>
         <img
           src={textMainPage}
@@ -88,34 +89,32 @@ const Home = () => {
           style={{ width: "550px", height: "160px" }}
         />
       </div>
-
-      {/* 🔥 About GIF Centered */}
-      <div
-        id="about"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          padding: 0,
-          margin: 0,
-        }}
-      >
-        <img
-          src={about}
-          alt="About"
-          style={{
-            width: "300px",
-            maxWidth: "90%",
-            margin: 0,
-            display: "block",
-          }}
-        />
-      </div>
-
+      <ScrollVelocity
+        texts={[
+          <div>
+            <img
+              src="/ShredAssests/shred.svg"
+              alt="down"
+              style={{ height: "32px" }}
+            />
+            <img
+              src="/ShredAssests/shred.svg"
+              alt="down"
+              style={{ height: "32px" }}
+            />
+            <img
+              src="/ShredAssests/shred.svg"
+              alt="down"
+              style={{ height: "32px" }}
+            />
+          </div>,
+        ]}
+        velocity={90.5}
+      />
       {/* 🧠 Rive Animation Section */}
       <div style={{ marginTop: 0, paddingTop: 0 }}>
         <RiveLayout />
       </div>
-
       {/* 👇 Meme + Circular Gallery Section */}
       <div
         id="memes"

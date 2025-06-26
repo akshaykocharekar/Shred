@@ -1,8 +1,9 @@
 .text-block {
-  margin: 2vw;
-
+  margin: 1vw; /* reduced spacing */
   font-family: monospace;
-  font-size: clamp(14px, 4vw, 32px);
+  font-size: clamp(12px, 2.8vw, 20px); /* smaller size range */
+  line-height: 1.4; /* tighter line spacing */
+  letter-spacing: -0.2px; /* tighter letter spacing */
   color: #fff;
 }
 

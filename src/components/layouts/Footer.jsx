@@ -12,45 +12,43 @@ const Footer = () => {
   return (
     <>
       <footer className="footer">
-        <div className="socials-wrapper">
-          <div className="icons">
-            <a
-              href="https://t.me/yourTelegram"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="icon-button"
-            >
-              <img src={telegramIcon} alt="Telegram" />
-            </a>
-            <a
-              href="https://twitter.com/yourTwitter"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="icon-button"
-            >
-              <img src={twitterIcon} alt="X (Twitter)" />
-            </a>
-            <a
-              href="https://www.dextools.io/app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="icon-button"
-            >
-              <img src={chainIcon} alt="DexTools" />
-            </a>
-            <a
-              href="https://dexscreener.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="icon-button"
-            >
-              <img src={owlIcon} alt="Dex Screener" />
-            </a>
-          </div>
-        </div>
-
         <div className="paw">
           <video src={pawVideo} autoPlay loop muted playsInline />
+        </div>
+
+        <div className="socials-wrapper">
+          <a
+            href="https://t.me/yourTelegram"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon-button"
+          >
+            <img src={telegramIcon} alt="Telegram" />
+          </a>
+          <a
+            href="https://twitter.com/yourTwitter"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon-button"
+          >
+            <img src={twitterIcon} alt="X (Twitter)" />
+          </a>
+          <a
+            href="https://www.dextools.io/app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon-button"
+          >
+            <img src={chainIcon} alt="DexTools" />
+          </a>
+          <a
+            href="https://dexscreener.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon-button"
+          >
+            <img src={owlIcon} alt="Dex Screener" />
+          </a>
         </div>
       </footer>
 
