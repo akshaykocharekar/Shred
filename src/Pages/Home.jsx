@@ -9,7 +9,7 @@ import buyNowBtn from "../../ShredAssests/buy now button.png";
 import textMainPage from "../../ShredAssests/animations/text_main_page.webp";
 import RiveLayout from "../components/RiveLayout";
 import ScrollVelocity from "../components/ScrollVelocity";
-
+import shred1 from "../../ShredAssests/shred.svg";
 const Home = () => {
   const velocity = 90.5;
   return (
@@ -97,16 +97,8 @@ const Home = () => {
               alt="down"
               style={{ height: "32px" }}
             />
-            <img
-              src="/ShredAssests/shred.svg"
-              alt="down"
-              style={{ height: "32px" }}
-            />
-            <img
-              src="/ShredAssests/shred.svg"
-              alt="down"
-              style={{ height: "32px" }}
-            />
+            <img src={shred1} alt="down" style={{ height: "32px" }} />
+            <img src={shred1} alt="down" style={{ height: "32px" }} />
           </div>,
         ]}
         velocity={90.5}
