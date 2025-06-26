@@ -124,7 +124,7 @@ const Home = () => {
             top: "25%",
             left: "50%",
             transform: "translate(-50%, -50%)",
-            width: "350px",
+            width: "450px",
             zIndex: 3,
           }}
         />
