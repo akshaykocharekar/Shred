@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
 import shred_head from "../../ShredAssests/animations/shred_head.riv";
-
-import "../Styles/RiveLayout.css"; //
 import aboutgif from "../../ShredAssests/animations/about.gif";
+import "../Styles/RiveLayout.css";
+
 const RiveLayout = () => {
   const STATE_MACHINE_NAME = "State Machine 1";
   const X_INPUT = "x";
@@ -33,87 +33,29 @@ const RiveLayout = () => {
   }, [xInput, yInput]);
 
   return (
-    <section
-      className="rive-wrapper"
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        padding: "2rem 1rem",
-        backgroundColor: "#000",
-        color: "#fff",
-        flexWrap: "wrap", // ensures mobile responsiveness
-      }}
-    >
-      <div id="about" className="rive-about" style={{ marginBottom: "-60px" }}>
+    <section className="rive-wrapper">
+      <div id="about" className="rive-about">
         <img src={aboutgif} alt="About GIF" />
       </div>
 
-      <div
-        className="rive-content"
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-          alignItems: "center",
-          gap: "0px", // 👈 removes space between items
-          flexWrap: "wrap", // keeps it mobile-friendly
-          maxWidth: "1200px",
-          margin: "0 auto",
-        }}
-      >
-        <div
-          className="rive-text"
-          style={{
-            flex: "1",
-            minWidth: "280px",
-
-            padding: "10px",
-          }}
-        >
-          <div
-            style={{
-              fontFamily: "",
-              marginTop: "60px",
-            }}
-          >
-            {
-              "A world built for the brave. Where risk isn't something you dodge — it's something you master. This is where Shred was born. Forged in market chaos, fueled by meme culture, made for those who move smart and bold. He's not a mascot. Not a hero. Not your average meme. Shred is a signal, a vibe. A living pulse of a community that moves different."
-            }
-          </div>
+      <div className="rive-content">
+        <div className="rive-text left-text">
+          A world built for the brave. Where risk isn't something you dodge —
+          it's something you master. This is where Shred was born. Forged in
+          market chaos, fueled by meme culture, made for those who move smart
+          and bold.
         </div>
 
-        <div
-          className="rive-animation"
-          style={{
-            flex: "1",
-            minWidth: "280px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginTop: "-40px",
-          }}
-        >
+        <div className="rive-animation">
           <RiveComponent className="rive-canvas" />
         </div>
 
-        <div
-          className="rive-text"
-          style={{
-            flex: "1",
-            minWidth: "380px",
-            padding: "10px",
-          }}
-        >
-          <div
-            style={{
-              marginTop: "-40px",
-            }}
-          >
-            {
-              "He's not a mascot. Not a hero. Not your average meme. Shred is a signal, a vibe. A living pulse of a community that moves different. When the markets bleed, the weak log off — but Shred's still there. Tail wagging. Teeth out. A protector of the sharp,the brave, and the ones who turn losses into comebacks."
-            }
-          </div>
+        <div className="rive-text right-text">
+          He's not a mascot. Not a hero. Not your average meme. Shred is a
+          signal, a vibe. A living pulse of a community that moves different.
+          When the markets bleed, the weak log off — but Shred's still there.
+          Tail wagging. Teeth out. A protector of the sharp, the brave, and the
+          ones who turn losses into comebacks.
         </div>
       </div>
     </section>
