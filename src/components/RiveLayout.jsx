@@ -79,7 +79,7 @@ const RiveLayout = () => {
           >
             A world built for the brave.Where risk isn't something you dodge --
             it's something you master .This is where Shred was born .Forged in
-            market chaos ,fueled by meme culture,made for those who move smart
+            market chaos,fueled by meme culture,made for those who move smart
             and bold.
           </div>
         </div>
