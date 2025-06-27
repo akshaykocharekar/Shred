@@ -41,13 +41,12 @@ const RiveLayout = () => {
 
       <div className="rive-content">
         <div className="rive-text">
-          <ScrambledText
+          <div
             id="about"
             className="scrambled-text-demo"
-            radius={100}
-            duration={1.2}
-            speed={0.5}
-            scrambleChars=".:"
+            style={{
+              fontFamily: "monospace",
+            }}
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
             pariatur dignissimos porro eius quam doloremque et enim velit nobis
@@ -58,7 +57,7 @@ const RiveLayout = () => {
             doloremque et enim velit nobis maxime. Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Similique pariatur dignissimos porro
             eius quam doloremque et enim velit nobis maxime.
-          </ScrambledText>
+          </div>
         </div>
 
         <div className="rive-animation">

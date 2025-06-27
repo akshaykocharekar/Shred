@@ -13,14 +13,17 @@ const Footer = () => {
   return (
     <>
       <footer className="footer">
-        <GlitchText
-          speed={1}
-          enableShadows={true}
-          enableOnHover={true}
+        <div
           className="custom-class"
+          style={{
+            fontFamily: "AntonCustom",
+            fontSize: "clamp(2.5rem, 10vw, 7rem)", // Responsive font size
+            letterSpacing: "4px",
+            marginTop: "30px",
+          }}
         >
           SOCIALS
-        </GlitchText>
+        </div>
 
         <div className="paw">
           <video src={pawVideo} autoPlay loop muted playsInline />

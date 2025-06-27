@@ -1,8 +1,9 @@
 .circular-gallery {
-  width: 100%;
-  height: 100%;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
   overflow: hidden;
   cursor: grab;
+  position: relative; /* Optional: helps if children are absolutely positioned */
 }
 
 .circular-gallery:active {

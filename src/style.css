@@ -1,13 +1,7 @@
 /* Load custom fonts */
 @font-face {
   font-family: "AntonCustom";
-  src: url("../ShredAssests/fonts/pixel_operator/PixelOperatorSC-Bold.ttf")
-    format("truetype");
-}
-
-@font-face {
-  font-family: "AntonCustom2";
-  src: url("../ShredAssests/fonts/futura-pt/FuturaCyrillicDemi.ttf")
+  src: url("../ShredAssests/fonts/pixel_operator/PixelOperatorMono-Bold.ttf")
     format("truetype");
 }
 
