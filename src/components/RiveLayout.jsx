@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
 import shred_head from "../../ShredAssests/animations/shred_head.riv";
-import ScrambledText from "../components/ScrambledText";
 
 import "../Styles/RiveLayout.css"; //
 import aboutgif from "../../ShredAssests/animations/about.gif";
@@ -71,16 +70,10 @@ const RiveLayout = () => {
             padding: "10px",
           }}
         >
-          <div
-            className="scrambled-text-demo"
-            style={{
-              fontFamily: "monospace",
-            }}
-          >
-            A world built for the brave.Where risk isn't something you dodge --
-            it's something you master .This is where Shred was born .Forged in
-            market chaos,fueled by meme culture,made for those who move smart
-            and bold.
+          <div className="scrambled-text-demo">
+            {
+              "A world built for the brave. Where risk isn't something you dodge — it's something you master. This is where Shred was born. Forged in market chaos, fueled by meme culture, made for those who move smart and bold."
+            }
           </div>
         </div>
 
@@ -106,17 +99,10 @@ const RiveLayout = () => {
             padding: "10px",
           }}
         >
-          <div
-            className="scrambled-text-demo"
-            style={{
-              fontFamily: "monospace",
-            }}
-          >
-            He's not a mascot.Not a hero.Not your average meme.Shred is a
-            signal,a vibe.A living pulse of a community that moves
-            different.When the markets bleed the weak log off--But Shred's still
-            there.Tail wagging.Teeth out.A protector of the sharp ,the brave and
-            the ones who turn losses into comebacks
+          <div>
+            {
+              "He's not a mascot. Not a hero. Not your average meme. Shred is a signal, a vibe. A living pulse of a community that moves different. When the markets bleed, the weak log off — but Shred's still there. Tail wagging. Teeth out. A protector of the sharp,the brave, and the ones who turn losses into comebacks."
+            }
           </div>
         </div>
       </div>

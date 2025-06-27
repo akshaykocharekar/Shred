@@ -27,7 +27,7 @@
   min-width: 300px;
   max-width: 600px;
   font-size: 1.1rem;
-  line-height: 1.8;
+
   text-align: justify;
   padding: 0 1rem;
 }
@@ -58,7 +58,7 @@
 
   .rive-text {
     font-size: 0.95rem;
-    line-height: 1.6;
+
     padding: 0 0.5rem;
   }
 
