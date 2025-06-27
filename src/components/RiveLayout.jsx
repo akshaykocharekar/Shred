@@ -48,15 +48,12 @@ const RiveLayout = () => {
               fontFamily: "monospace",
             }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            Lorem ipsum dolor sit ametconsectetur adipisicing elit. Similique
             pariatur dignissimos porro eius quam doloremque et enim velit nobis
-            maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Similique pariatur dignissimos porro eius quam doloremque et enim
-            velit nobis maxime. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Similique pariatur dignissimos porro eius quam
-            doloremque et enim velit nobis maxime. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Similique pariatur dignissimos porro
-            eius quam doloremque et enim velit nobis maxime.
+            maxime. consectetur adipisicing elit. Similique pariatur dignissimos
+            porro eius quam doloremque etenim velit nobis maximeconsectetur
+            adipisicing elit. Similiquepariatur dignissimos porro eius quam
+            doloremque et enim velit nobis maxime.
           </div>
         </div>
 
