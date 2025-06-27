@@ -34,46 +34,89 @@ const RiveLayout = () => {
   }, [xInput, yInput]);
 
   return (
-    <section className="rive-wrapper">
-      <div id="about" className="rive-about">
-        <img src={aboutgif} />
+    <section
+      className="rive-wrapper"
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "2rem 1rem",
+        backgroundColor: "#000",
+        color: "#fff",
+        flexWrap: "wrap", // ensures mobile responsiveness
+      }}
+    >
+      <div id="about" className="rive-about" style={{ marginBottom: "-30px" }}>
+        <img src={aboutgif} alt="About GIF" />
       </div>
 
-      <div className="rive-content">
-        <div className="rive-text">
+      <div
+        className="rive-content"
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "0px", // 👈 removes space between items
+          flexWrap: "wrap", // keeps it mobile-friendly
+          maxWidth: "1200px",
+          margin: "0 auto",
+        }}
+      >
+        <div
+          className="rive-text"
+          style={{
+            flex: "1",
+            minWidth: "280px",
+            padding: "10px",
+          }}
+        >
           <div
-            id="about"
             className="scrambled-text-demo"
             style={{
               fontFamily: "monospace",
             }}
           >
-            Lorem ipsum dolor sit ametconsectetur adipisicing elit. Similique
-            pariatur dignissimos porro eius quam doloremque et enim velit nobis
-            maxime. consectetur adipisicing elit. Similique pariatur dignissimos
-            porro eius quam doloremque etenim velit nobis maximeconsectetur
-            adipisicing elit. Similiquepariatur dignissimos porro eius quam
-            doloremque et enim velit nobis maxime.
+            A world built for the brave.Where risk isn't something you dodge --
+            it's something you master .This is where Shred was born .Forged in
+            market chaos ,fueled by meme culture,made for those who move smart
+            and bold.
           </div>
         </div>
 
-        <div className="rive-animation">
+        <div
+          className="rive-animation"
+          style={{
+            flex: "1",
+            minWidth: "280px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            padding: "10px",
+          }}
+        >
           <RiveComponent className="rive-canvas" />
         </div>
-        <div className="rive-text">
+
+        <div
+          className="rive-text"
+          style={{
+            flex: "1",
+            minWidth: "280px",
+            padding: "10px",
+          }}
+        >
           <div
-            id="about"
             className="scrambled-text-demo"
             style={{
               fontFamily: "monospace",
             }}
           >
-            Lorem ipsum dolor sit ametconsectetur adipisicing elit. Similique
-            pariatur dignissimos porro eius quam doloremque et enim velit nobis
-            maxime. consectetur adipisicing elit. Similique pariatur dignissimos
-            porro eius quam doloremque etenim velit nobis maximeconsectetur
-            adipisicing elit. Similiquepariatur dignissimos porro eius quam
-            doloremque et enim velit nobis maxime.
+            He's not a mascot.Not a hero.Not your average meme.Shred is a
+            signal,a vibe.A living pulse of a community that moves
+            different.When the markets bleed the weak log off--But Shred's still
+            there.Tail wagging.Teeth out.A protector of the sharp ,the brave and
+            the ones who turn losses into comebacks
           </div>
         </div>
       </div>
