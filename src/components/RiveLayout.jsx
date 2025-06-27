@@ -45,7 +45,7 @@ const RiveLayout = () => {
         flexWrap: "wrap", // ensures mobile responsiveness
       }}
     >
-      <div id="about" className="rive-about" style={{ marginBottom: "-30px" }}>
+      <div id="about" className="rive-about" style={{ marginBottom: "-60px" }}>
         <img src={aboutgif} alt="About GIF" />
       </div>
 
@@ -67,12 +67,18 @@ const RiveLayout = () => {
           style={{
             flex: "1",
             minWidth: "280px",
+
             padding: "10px",
           }}
         >
-          <div className="scrambled-text-demo">
+          <div
+            style={{
+              fontFamily: "",
+              marginTop: "60px",
+            }}
+          >
             {
-              "A world built for the brave. Where risk isn't something you dodge — it's something you master. This is where Shred was born. Forged in market chaos, fueled by meme culture, made for those who move smart and bold."
+              "A world built for the brave. Where risk isn't something you dodge — it's something you master. This is where Shred was born. Forged in market chaos, fueled by meme culture, made for those who move smart and bold. He's not a mascot. Not a hero. Not your average meme. Shred is a signal, a vibe. A living pulse of a community that moves different."
             }
           </div>
         </div>
@@ -85,7 +91,7 @@ const RiveLayout = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            padding: "10px",
+            marginTop: "-40px",
           }}
         >
           <RiveComponent className="rive-canvas" />
@@ -95,11 +101,15 @@ const RiveLayout = () => {
           className="rive-text"
           style={{
             flex: "1",
-            minWidth: "280px",
+            minWidth: "380px",
             padding: "10px",
           }}
         >
-          <div>
+          <div
+            style={{
+              marginTop: "-40px",
+            }}
+          >
             {
               "He's not a mascot. Not a hero. Not your average meme. Shred is a signal, a vibe. A living pulse of a community that moves different. When the markets bleed, the weak log off — but Shred's still there. Tail wagging. Teeth out. A protector of the sharp,the brave, and the ones who turn losses into comebacks."
             }
