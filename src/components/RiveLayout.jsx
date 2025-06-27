@@ -60,6 +60,22 @@ const RiveLayout = () => {
         <div className="rive-animation">
           <RiveComponent className="rive-canvas" />
         </div>
+        <div className="rive-text">
+          <div
+            id="about"
+            className="scrambled-text-demo"
+            style={{
+              fontFamily: "monospace",
+            }}
+          >
+            Lorem ipsum dolor sit ametconsectetur adipisicing elit. Similique
+            pariatur dignissimos porro eius quam doloremque et enim velit nobis
+            maxime. consectetur adipisicing elit. Similique pariatur dignissimos
+            porro eius quam doloremque etenim velit nobis maximeconsectetur
+            adipisicing elit. Similiquepariatur dignissimos porro eius quam
+            doloremque et enim velit nobis maxime.
+          </div>
+        </div>
       </div>
     </section>
   );

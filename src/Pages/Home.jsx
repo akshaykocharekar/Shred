@@ -22,6 +22,7 @@ const Home = () => {
           position: "relative",
           width: "100%",
           height: "500px",
+          backgroundColor: "black", // Just in case video doesn't load
           overflow: "hidden",
         }}
       >
@@ -39,6 +40,19 @@ const Home = () => {
             position: "absolute",
             top: 0,
             left: 0,
+          }}
+        />
+
+        {/* Fade to black at bottom */}
+        <div
+          style={{
+            position: "absolute",
+            bottom: 0,
+            width: "100%",
+            height: "100px",
+            background:
+              "linear-gradient(to bottom, rgba(0,0,0,0) 0%, black 100%)",
+            zIndex: 1,
           }}
         />
 
@@ -82,6 +96,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       {/* 📃 Text image below Buy Now */}
       <div style={{ display: "flex", justifyContent: "center" }}>
         <img
