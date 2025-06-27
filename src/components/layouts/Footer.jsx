@@ -17,8 +17,8 @@ const Footer = () => {
           className="custom-class"
           style={{
             fontFamily: "AntonCustom",
-            fontSize: "7rem", // You can adjust this size
-            letterSpacing: "4px", // Adds spacing between letters
+            fontSize: "clamp(2.5rem, 10vw, 7rem)", // Responsive font size
+            letterSpacing: "4px",
             marginTop: "30px",
           }}
         >
