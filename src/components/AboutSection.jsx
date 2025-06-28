@@ -40,6 +40,7 @@ const AboutSection = () => {
       </h2>
 
       <div
+        id="about"
         style={{
           display: "flex",
           justifyContent: "center",
