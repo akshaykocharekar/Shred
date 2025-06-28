@@ -100,18 +100,25 @@ const Home = () => {
       </div>
 
       {/* 📃 Text image below Buy Now */}
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginBottom: "10px",
+        }}
+      >
         <img
           src={textMainPage}
           alt="Main Text"
-          style={{ width: "550px", height: "160px" }}
+          style={{ width: "475px", height: "160px" }}
         />
       </div>
 
       <div
         style={{
           display: "flex",
-          marginTop: "20px",
+          marginBottom: "100px",
+          marginTop: "10px",
           width: "100%",
         }}
       >
