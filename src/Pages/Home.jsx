@@ -7,12 +7,10 @@ import bgv from "../../ShredAssests/animations/bg_1.webm";
 import shredmain from "../../ShredAssests/shredglasses.webm";
 import buyNowBtn from "../../ShredAssests/buy now button.png";
 import textMainPage from "../../ShredAssests/animations/text_main_page.webp";
-import RiveLayout from "../components/RiveLayout";
 import ScrollVelocity from "../components/ScrollVelocity";
 import shred1 from "../../ShredAssests/shred.svg";
 import "../Styles/Home.css";
 const Home = () => {
-  const velocity = 90.5;
   return (
     <Layout>
       {/* 🔳 Hero Section */}
@@ -78,8 +76,11 @@ const Home = () => {
               playsInline
               style={{
                 width: "300px",
+                height: "480px",
+
                 borderRadius: "20px",
               }}
+              className="shred-video"
             />
             <img
               src={buyNowBtn}
@@ -106,20 +107,29 @@ const Home = () => {
         />
       </div>
 
-      <ScrollVelocity
-        texts={[
-          <div>
-            <img src={shred1} alt="down" style={{ height: "32px" }} />
-            <img src={shred1} alt="down" style={{ height: "32px" }} />
-            <img src={shred1} alt="down" style={{ height: "32px" }} />
-          </div>,
-        ]}
-        velocity={90.5}
-      />
-      {/* 🧠 Rive Animation Section */}
-      <div style={{ marginTop: 0, paddingTop: 0 }}>
-        <RiveLayout />
+      <div
+        style={{
+          display: "flex",
+          marginTop: "20px",
+          width: "100%",
+        }}
+      >
+        {[...Array(18)].map((_, i) => (
+          <img
+            key={i}
+            src={shred1}
+            alt="down"
+            style={{
+              flex: 1,
+              height: "32px",
+              objectFit: "cover",
+            }}
+          />
+        ))}
       </div>
+
+      {/* 🧠 Rive Animation Section */}
+
       {/* 👇 Meme + Circular Gallery Section */}
       <div
         id="memes"

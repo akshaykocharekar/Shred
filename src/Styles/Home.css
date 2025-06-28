@@ -53,3 +53,9 @@
     height: auto;
   }
 }
+
+@media (min-width: 768px) {
+  .shred-video {
+    width: 1500px !important;
+  }
+}

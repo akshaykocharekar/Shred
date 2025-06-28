@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "AntonCustom2";
-}
-
 /* NAVBAR */
 .navbar {
   position: relative;
@@ -58,8 +54,9 @@ body {
 }
 .nav-item {
   font-weight: 500;
-  font-family: "AntonCustom2";
+  font-family: "AntonCustom";
   cursor: pointer;
+  font-size: 20px;
   position: relative;
   text-transform: uppercase;
   letter-spacing: 0.5px;
