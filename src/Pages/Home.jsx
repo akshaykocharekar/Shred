@@ -10,6 +10,7 @@ import textMainPage from "../../ShredAssests/animations/text_main_page.webp";
 import ScrollVelocity from "../components/ScrollVelocity";
 import shred1 from "../../ShredAssests/shred.svg";
 import "../Styles/Home.css";
+import AboutSection from "../components/AboutSection";
 const Home = () => {
   return (
     <Layout>
@@ -129,7 +130,7 @@ const Home = () => {
       </div>
 
       {/* 🧠 Rive Animation Section */}
-
+      <AboutSection />
       {/* 👇 Meme + Circular Gallery Section */}
       <div
         id="memes"
